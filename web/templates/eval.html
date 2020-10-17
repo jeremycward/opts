@@ -1,0 +1,21 @@
+{% from "_formhelpers.html" import render_field %}
+<form method=post>
+  <dl>
+    {{ render_field(form.spot) }}
+    {{ render_field(form.strike) }}
+    {{ render_field(form.tenor) }}
+    {{ render_field(form.riskFreeRate) }}
+    {{ render_field(form.volatility) }}
+    {{ render_field(form.callPut) }}
+    {{ render_field(form.premium) }}
+    {{ render_field(form.solveFor) }}
+
+  </dl>
+  <p><input type=submit value=Calculate>
+
+
+</form>
+
+
+
+
